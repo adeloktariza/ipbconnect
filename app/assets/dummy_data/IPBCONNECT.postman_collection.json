@@ -1,0 +1,2885 @@
+{
+	"info": {
+		"name": "IPBCONNECT",
+		"_postman_id": "40053d76-9a91-4a90-654c-566f0a562aa5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Events",
+			"description": "",
+			"item": [
+				{
+					"name": "Select events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/events",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"events"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Kompetisi Futsal asasasasa",
+									"type": "text"
+								},
+								{
+									"key": "place",
+									"value": "Gor Padjajaran",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-6.666312573010261",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "107.02880859375",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2016-12-18",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "startTime",
+									"value": "07:00",
+									"type": "text"
+								},
+								{
+									"key": "endTime",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Kompetisi futsal berhadiah 1 triliun rupiah",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "08123456678",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "583e18592776023f226892d0",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/events",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"events"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Event",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/events/5855def719ba0aa91db44de4",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"events",
+								"5855def719ba0aa91db44de4"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Kompetisi Futsal",
+									"type": "text"
+								},
+								{
+									"key": "place",
+									"value": "Gor Padjajaran",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-6.666312573010261",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "107.02880859375",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2016-12-18",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2016-12-19",
+									"type": "text"
+								},
+								{
+									"key": "startTime",
+									"value": "07:00",
+									"type": "text"
+								},
+								{
+									"key": "endTime",
+									"value": "08:00",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Kompetisi futsal berhadiah 1 triliun rupiah",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "08123456678",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "Selection_057.png",
+									"value": ""
+								},
+								{
+									"key": "createdBy",
+									"value": "583e18592776023f226892d0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/events",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"events"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JobLocations",
+			"description": "",
+			"item": [
+				{
+					"name": "Insert Job Locations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sumatera Utara",
+									"type": "text"
+								},
+								{
+									"key": "created",
+									"value": "2016-11-20",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "5828510a1e33db55293786a7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/joblocations",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"joblocations"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Job Location",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Sumatera Barat",
+									"type": "text"
+								},
+								{
+									"key": "modified",
+									"value": "2016-11-21",
+									"type": "text"
+								},
+								{
+									"key": "modifiedBy",
+									"value": "5828510a1e33db55293786a9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/joblocations/5833908af1d5db012de50626",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"joblocations",
+								"5833908af1d5db012de50626"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Job Location",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cGFuZHU6cGFuZHU="
+							},
+							{
+								"key": "test",
+								"value": "test"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/joblocations",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"joblocations"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job Location",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/joblocations/58339315d0274ab32db51061",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"joblocations",
+								"58339315d0274ab32db51061"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Memories",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Memory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "caption",
+									"value": "test caption",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"warning": "",
+									"src": "Selection_058.png",
+									"value": ""
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"type": "text",
+									"warning": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Like Memory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "583e18592776023f226892d0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/like/58552e5985e6645d17488d2a",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"like",
+								"58552e5985e6645d17488d2a"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Comment Memory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "value",
+									"value": "Sumpah bagus banget ",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/comment/59d4f126de7ec2e81ccd07d0",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"comment",
+								"59d4f126de7ec2e81ccd07d0"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/comment/58509bd7be6bddf02d7193fb",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"comment",
+								"58509bd7be6bddf02d7193fb"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike memories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/unlike/58552e5985e6645d17488d2a",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"unlike",
+								"58552e5985e6645d17488d2a"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Memory by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "caption",
+									"value": "test caption",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"warning": "",
+									"src": "Selection_058.png",
+									"value": ""
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"type": "text",
+									"warning": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/59d4f126de7ec2e81ccd07d0",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"59d4f126de7ec2e81ccd07d0"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Memory by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "caption",
+									"value": "test caption",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"warning": "",
+									"src": "Selection_058.png",
+									"value": ""
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"type": "text",
+									"warning": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/59d4f7faf23a540c0e4831cb",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"59d4f7faf23a540c0e4831cb"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Memory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "caption",
+									"value": "test caption",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"warning": "",
+									"src": "Selection_058.png",
+									"value": ""
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"type": "text",
+									"warning": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Memory",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "caption",
+									"value": "test caption yaaaa",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"warning": "",
+									"src": "Selection_058.png",
+									"value": ""
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"type": "text",
+									"warning": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/memories/59d4f126de7ec2e81ccd07d0",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"memories",
+								"59d4f126de7ec2e81ccd07d0"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StudyPrograms",
+			"description": "",
+			"item": [
+				{
+					"name": "List Combo Study Program",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/studyprograms/getlist",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"studyprograms",
+								"getlist"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Study Program",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Statistika",
+									"type": "text"
+								},
+								{
+									"key": "facultyId",
+									"value": "5840bd4e35da2d6d1a8c9d88",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "583e18592776023f226892d0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/studyprograms",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"studyprograms"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Faculty",
+			"description": "",
+			"item": [
+				{
+					"name": "Select Faculty",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/faculties/",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"faculties",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Faculty by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/faculties/58ac5ee528d14d80633bdb6f",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"faculties",
+								"58ac5ee528d14d80633bdb6f"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Faculty",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "587a5aadad63f4e94e2af4b5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Bisnis",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "modifiedBy",
+									"value": "587a5aadad63f4e94e2af4b5",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/faculties/58ac5ee528d14d80633bdb6f",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"faculties",
+								"58ac5ee528d14d80633bdb6f"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Faculty",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "587a5aadad63f4e94e2af4b5",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Bisnis Tes",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "modifiedBy",
+									"value": "587a5aadad63f4e94e2af4b5",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/faculties",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"faculties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Faculty",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/faculties/59f1d57bbe11c4041a7d3f9e",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"faculties",
+								"59f1d57bbe11c4041a7d3f9e"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "Insert Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "lutfi",
+									"type": "text"
+								},
+								{
+									"key": "fullName",
+									"value": "Muhammad Lutfi",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "L",
+									"type": "text"
+								},
+								{
+									"key": "batch",
+									"value": "48",
+									"type": "text"
+								},
+								{
+									"key": "dateOfBirth",
+									"value": "1993-06-08",
+									"type": "text"
+								},
+								{
+									"key": "nim",
+									"value": "G64144039",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mlutfib@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "studyProgramId",
+									"value": "582852fde73265682c5f8e6c",
+									"type": "text"
+								},
+								{
+									"key": "isVerified",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "userType",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Insert/Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "Permata Hijau Permai",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "mobileNumber",
+									"value": "081283862720",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "currentJob",
+									"value": "Back End Developer",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "interest",
+									"value": "programming",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "hobby",
+									"value": "futsal",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "maritalStatus",
+									"value": "pengen nikah",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "latitude",
+									"value": "120.20",
+									"type": "text",
+									"warning": ""
+								},
+								{
+									"key": "longitude",
+									"value": "120.30",
+									"type": "text",
+									"warning": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/profiles/{{user-id}}",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"profiles",
+								"{{user-id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Upload photo profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"warning": "",
+									"src": "pandu.jpg",
+									"value": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/profiles/upload/583e18592776023f226892d0",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"profiles",
+								"upload",
+								"583e18592776023f226892d0"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Detail User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/{{user-id}}",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"{{user-id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/profiles/{{user-id}}",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"profiles",
+								"{{user-id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "oldPass",
+									"value": "pandu",
+									"type": "text"
+								},
+								{
+									"key": "newPass",
+									"value": "pandu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/change-password/{{user-id}}",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"change-password",
+								"{{user-id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Verified User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/verified/{{user-id}}",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"verified",
+								"{{user-id}}"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Count Batch Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/count-batch",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"count-batch"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "loginadmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "mlutfib26@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/loginadmin",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"loginadmin"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "arlnggul@gmail.com",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/forgotpassword",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"forgotpassword"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "arlinunggul@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "terserahlu13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/users/login",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vacancies",
+			"description": "",
+			"item": [
+				{
+					"name": "Edit Vacancies",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Dibutuhkan Programmer IOS Ganti",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "PT. Nusantara Cemerlang",
+									"type": "text"
+								},
+								{
+									"key": "closeDate",
+									"value": "2016-11-23T00:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "hrd@nusantara.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "SUBJECT GANTI",
+									"type": "text"
+								},
+								{
+									"key": "companyProfile",
+									"value": "Digital Oasis (PT Pilar Timur Teknologi) merupakan perusahaan IT Consultant & Software Development yang berlokasi di Bandung, saat ini sedang membutuhkan tenaga handal & profesional untuk Web Programmer.",
+									"type": "text"
+								},
+								{
+									"key": "jobQualification",
+									"value": "- Attitude dan pemahaman kultur kerja lebih diutamakan\\n- Minimal pengalaman 1 tahun sebagai web programmer\\n- Penguasaan konsep OOP, struktur data & algoritma yang baik\\n- Mengenal teknologi web dan mengetahui cara kerja sebuah website\\n- Menguasai PHP, HTML, CSS, Javascript, Angular JS, SQL, Node JS\\n- Berpengalaman pada framework PHP, i.e CI, YII, Laravel, dll. Jika ada, sertakan link/screenshot/deskripsi yang pernah dibuat\\n- Mampu bekerja dengan target tinggi, disiplin dan ketat\\n- Memiliki Passion yang tinggi di bidang IT\\n- Mampu bekerja secara tim atau individual\\n- Bertanggung jawab dan SIAP adaptasi dengan lingkungan kerja\\n- Menguasai ETL Pentaho menjadi nilai plus",
+									"type": "text"
+								},
+								{
+									"key": "jobDescription",
+									"value": " Membuat timeline pekerjaan\\n- Melakukan implementasi coding aplikasi web project/product\\n- Menyelesaikan bug fixing\\n- Membuat laporan harian dan diserahkan ke SPV",
+									"type": "text"
+								},
+								{
+									"key": "salaryMax",
+									"value": "5000000",
+									"type": "text"
+								},
+								{
+									"key": "salaryMin",
+									"value": "3000000",
+									"type": "text"
+								},
+								{
+									"key": "jobLocationId",
+									"value": "5828510a1e33db55293786a7",
+									"type": "text"
+								},
+								{
+									"key": "modified",
+									"value": "2016-11-18T14:59:53.060Z",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"value": "- CV\\n- Portofolio\\n- Pas Foto terbaru\\n- scan ijazah",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/vacancies/58b241206d1f436548a46a47",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"vacancies",
+								"58b241206d1f436548a46a47"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Vacancies",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Dobutuhkan Programmer Objectove C 17",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "PT. INK Canvas",
+									"type": "text"
+								},
+								{
+									"key": "closeDate",
+									"value": "2016-11-23T00:00:00.000Z",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "hrd@nusantara.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "PRG_[NAMA]",
+									"type": "text"
+								},
+								{
+									"key": "companyProfile",
+									"value": "Digital Oasis (PT Pilar Timur Teknologi) merupakan perusahaan IT Consultant & Software Development yang berlokasi di Bandung, saat ini sedang membutuhkan tenaga handal & profesional untuk Web Programmer.",
+									"type": "text"
+								},
+								{
+									"key": "jobQualification",
+									"value": "- Attitude dan pemahaman kultur kerja lebih diutamakan\\n- Minimal pengalaman 1 tahun sebagai web programmer\\n- Penguasaan konsep OOP, struktur data & algoritma yang baik\\n- Mengenal teknologi web dan mengetahui cara kerja sebuah website\\n- Menguasai PHP, HTML, CSS, Javascript, Angular JS, SQL, Node JS\\n- Berpengalaman pada framework PHP, i.e CI, YII, Laravel, dll. Jika ada, sertakan link/screenshot/deskripsi yang pernah dibuat\\n- Mampu bekerja dengan target tinggi, disiplin dan ketat\\n- Memiliki Passion yang tinggi di bidang IT\\n- Mampu bekerja secara tim atau individual\\n- Bertanggung jawab dan SIAP adaptasi dengan lingkungan kerja\\n- Menguasai ETL Pentaho menjadi nilai plus",
+									"type": "text"
+								},
+								{
+									"key": "jobDescription",
+									"value": "Membuat timeline pekerjaan\\n- Melakukan implementasi coding aplikasi web project/product\\n- Menyelesaikan bug fixing\\n- Membuat laporan harian dan diserahkan ke SPV",
+									"type": "text"
+								},
+								{
+									"key": "salaryMax",
+									"value": "5000000",
+									"type": "text"
+								},
+								{
+									"key": "salaryMin",
+									"value": "3000000",
+									"type": "text"
+								},
+								{
+									"key": "jobLocationId",
+									"value": "5828510a1e33db55293786a7",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"value": "- CV\\n- Portofolio\\n- Pas Foto terbaru\\n- scan ijazah",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Jakarta",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "583e18592776023f226892d0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/vacancies",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"vacancies"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select All Vacancies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/vacancies/",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"vacancies",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vacancies",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/vacancies/58323e650db301f71cb980fc",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"vacancies",
+								"58323e650db301f71cb980fc"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Vacancies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/vacancies/58b241206d1f436548a46a47",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"vacancies",
+								"58b241206d1f436548a46a47"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "studyProgram",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "News",
+			"description": "",
+			"item": [
+				{
+					"name": "Create News",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "ugl news",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "ini konten dgn 1 foto",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "photos",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/news",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"news"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select News",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "ugl news",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "ini konten dgn 1 foto",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "photos",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/news",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"news"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KnowledgeSharingCategory",
+			"description": "",
+			"item": [
+				{
+					"name": "Select Knowledge Sharing Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharingcategories",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharingcategories"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Knowledge Sharing Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Teknologi",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharingcategories",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharingcategories"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Knowledge Sharing Category by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharingcategories/59f1918f5f00e4202aada689",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharingcategories",
+								"59f1918f5f00e4202aada689"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Knowledge Sharing Category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "tes tes tes",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharingcategories/59f1917d5f00e4202aada688",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharingcategories",
+								"59f1917d5f00e4202aada688"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Knowledge Sharing Category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharingcategories/59f1918f5f00e4202aada681",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharingcategories",
+								"59f1918f5f00e4202aada681"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KnowledgeSharing",
+			"description": "",
+			"item": [
+				{
+					"name": "Select Knowledge Sharing",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "cover",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "title",
+									"value": "ini judul\n",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "deskripsi",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "59f1917d5f00e4202aada688",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Knowledge Sharing by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/5a095fe082fccc5f39ba527d",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"5a095fe082fccc5f39ba527d"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Knowledge Sharing By Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/category/59f1917d5f00e4202aada688",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"category",
+								"59f1917d5f00e4202aada688"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"description": "",
+									"type": "file",
+									"src": "file.pptx"
+								},
+								{
+									"key": "title",
+									"value": "Tes Konten",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "deskripsi",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "59f1ecf6fd6c74ba2a8bfb4a",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c09478af15403969eb16de",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update Knowledge Sharing",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "cover",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "title",
+									"value": "judul tes",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "deskripsi tes yah",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "59f1917d5f00e4202aada688",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/59f6bd9dab35e5681535797c",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"59f6bd9dab35e5681535797c"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Knowledge Sharing",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/5a041b979247689819ef8690",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"5a041b979247689819ef8690"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Like Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "59b3b8e4af15403969eb16b7",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/like/5a09285af16fa99d1c0d13c9",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"like",
+								"5a09285af16fa99d1c0d13c9"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/unlike/5a0488cfac8dce8022540588",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"unlike",
+								"5a0488cfac8dce8022540588"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Comment to Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "comment",
+									"value": "nice content!",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c09478af15403969eb16de",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/comment/5a09285af16fa99d1c0d13c9",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"comment",
+								"5a09285af16fa99d1c0d13c9"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select All Comments and Reply of Knowledge Sharing",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "comment",
+									"value": "bagus kontennya 3",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/comment/5a0488cfac8dce8022540588",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"comment",
+								"5a0488cfac8dce8022540588"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Reply to Comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "59b3b8e4af15403969eb16b7",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "iya bener gul",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "commentId",
+									"value": "5a092c07f16fa99d1c0d13ca",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/comment/reply/5a09285af16fa99d1c0d13c9",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"comment",
+								"reply",
+								"5a09285af16fa99d1c0d13c9"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Bookmark Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "createdBy",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/bookmark/5a056418473de4b018ee9d13",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"bookmark",
+								"5a056418473de4b018ee9d13"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Bookmarked Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/bookmark",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"bookmark"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Knowledge Sharing By Creator",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "creator",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/uploaded",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"uploaded"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Knowledge Sharing Likers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/likers/5a0488cfac8dce8022540588",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"likers",
+								"5a0488cfac8dce8022540588"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Report Knowledge Sharing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "59c9d6075f15145011432fb6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/report/5a0488cfac8dce8022540588",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"report",
+								"5a0488cfac8dce8022540588"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Select Reported Knowledge Sharing",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/report",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"report"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Knowledge Sharing Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/report/approve/5a06ea4a1fb3754049e2d366",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"report",
+								"approve",
+								"5a06ea4a1fb3754049e2d366"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Knowledge Sharing Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{api-gateway-host}}/knowledgesharings/report/reject/5a0488cfac8dce8022540588",
+							"host": [
+								"{{api-gateway-host}}"
+							],
+							"path": [
+								"knowledgesharings",
+								"report",
+								"reject",
+								"5a0488cfac8dce8022540588"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,61 @@
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Explore Alumni</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+    <div class="container">
+    	<div class="row">
+    		<!-- perbedaan -->
+			<div class="col-md-5"><h4 class="pull-right"><b>Search Criteria :</b></h4></div>
+			<form ng-submit="pageChanged()">
+				<div class="col-md-2">
+					<div class="input-append">
+							<input class="form-control input-md" id="appendedInputButtons" type="text" placeholder="Full Name..." ng-model="query.fullName">
+						</div>
+				</div>
+				<div class="col-md-3">
+					<div class="input-append ">
+							 <select class="form-control" ng-options="item._id as item.name for item in faculty" ng-model="query.studyProgramId">
+	                        <option value=""> Choose Study Program </option>
+	                    </select>
+				</div>
+				</div>
+				<div class="col-md-1">
+								<div class="input-append ">
+							<input class="form-control input-md" id="appendedInputButtons" type="text" placeholder="Batch .." ng-model="query.batch">
+						</div>
+				</div>
+				<div class="col-md-1">
+					<button class="btn button-yellow" type="submit"><font color="black">Search</font></button>
+				</div>
+			</form>
+
+    </div>
+    <div class="row">
+    		<div class="col-md-3 col-sm-6" ng-repeat="e in userList">
+				<div class="blog-post" align="center">
+					
+					<a href="" ng-click="openLightboxModal(e.profile.photo)">
+						<img ng-src="{{resolvedPhoto(e.profile.photo)}}" class="img-circle" width="200" height="200" alt="Explore Alumni">
+					</a>
+					<div class="post-title">
+						<h5 align="center"><a href="" ng-click="goDetailUser(e._id)"><b>{{e.fullName}}</b></a></h5>
+					</div>
+						<p class="txt-center">{{e.studyProgramId.name}}</p>
+						<p class="txt-center">{{e.batch}}</p>
+				</div>
+
+			</div>
+    </div>
+    <div class="pagination-wrapper " ng-show="total > 0">
+				<ul uib-pagination total-items="offset" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true" num-pages="numPages" ng-change="pageChanged()"></ul>
+		</div>
+</div>
+

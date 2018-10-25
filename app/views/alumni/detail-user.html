@@ -1,0 +1,98 @@
+<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Account Detail</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="section">
+	    	<div class="container">
+	    		<div class="row">
+					<div >
+						 <div class="col-md-1"></div>
+						 <div class="col-md-10">
+							<div class="shop-item">
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="title">
+											<div class="testimonial" align="left">
+							        			<div class="author-photo">
+							        				<a href="" ng-click="openLightboxModal(user.profile.photo)">
+														<img ng-src="{{resolvedPhotoAccount(user.profile.photo)}}" height="130" width="130" alt="Author 1">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="title spc-up">
+											<h4><b>{{user.fullName}}</b></h4>
+											<h5>{{user.studyProgramId.name}}</h5>
+											<h5>{{user.batch}}</h5>
+										</div>
+									</div>
+								</div>
+								<div class="description spc-up">
+									<h2>ACADEMIC</h2>
+									<div class="row">
+										<div class="col-md-6">
+											<ul>
+												<li><h4><b>Name</b><br/>{{user.fullName}}</h4></li>
+												<li><h4><b>NIM</b><br/>{{user.nim}}</h4></li>
+												<li><h4><b>Study Program</b><br/>{{user.studyProgramId.name}}</h4></li>
+												<li><h4><b>Batch</b><br/>{{user.batch}}</h4></li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<ul>
+												<li><h4><b>Date of Birth</b><br/>{{user.dateOfBirth|date}}</h4></li>
+												<li><h4><b>Gender</b><br/>{{user.gender}}</h4></li>
+												<li><h4><b>Academic Status</b><br/>{{user.userType}}</h4></li>
+												<li><h4><b>Email</b><br/>{{user.email}}</h4></li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="description spc-up">
+									<h2>PROFILE</h2>
+									<div class="row">
+										<div class="col-md-6">
+											<ul>
+												<li><h4><b>Current Job</b><br/>{{user.profile.currentJob}}</h4></li>
+												<li><h4><b>Marital Status</b><br/>{{user.profile.maritalStatus}}</h4></li>
+												<li><h4><b>Current Address</b><br/>{{user.profile.address}}</h4></li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<ul>
+												<li><h4><b>Phone Number</b><br/>{{user.profile.mobileNumber}}</h4></li>
+												<li><h4><b>Interest</b><br/>{{user.profile.interest}}</h4></li>
+												<li><h4><b>Hobby</b><br/>{{user.profile.hobby}}</h4></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="description spc-up">
+									<h2>LOCATION</h2>
+									<div map-lazy-load="{{googleMaps}}" class="col s12" style="padding:0px">
+							        	 <ng-map center="[{{user.profile.latitude}}, {{user.profile.longitude}}]" 
+							        	 zoom="30">
+							          		<marker position="{{position.lat}}, {{position.lng}}"></marker>
+							        	 </ng-map>
+					     			</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+	    			<!-- End Open Vacancies List -->
+	    		</div>
+			</div>
+		</div>
+
+	   

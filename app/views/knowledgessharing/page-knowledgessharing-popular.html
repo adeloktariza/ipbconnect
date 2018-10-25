@@ -1,0 +1,87 @@
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Knowledge Sharing</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<br/>
+		<div>
+			<div style="float:left;">
+			</div>
+			<div class="inner-addon left-addon" style="float:right;padding-right:90px;">
+				 <i class="glyphicon glyphicon-search"></i>
+				 <input style="width: 250px;height: 34px;border-radius: 5px;margin-right:90px" type="text" placeholder="Search knowledge sharing ..."  ng-model="SearchNamePopular" ng-change="SearchKnowladgePopular()"></span>
+			</div>
+			<div style="float:right;">
+			</div>
+			<div style="float:left;padding-left:176px;">
+				 <ul class="nav nav-tabs">
+	    			<li><a href="" ui-sref="app.knowledgessharing">Terbaru</a></li>
+	    			<li class="active"><a href="" ui-sref="app.knowledgessharing_popular" style="background-color: transparent;">Popular</a></li>
+	    			<!--<div class="nav nav-tabs" style="float:left" ng-repeat="c in categoryList">-->
+        				<li ng-repeat="c in categoryList"><a ng-href="#/knowledgessharing/category/{{c._id}}">{{c.name}}</a></li>
+        			<!--</div>-->
+	    		</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+       <br/><br/>
+        <!-- Posts List --> 
+        <div class="section blog-posts-wrapper" style="margin-top:-30px;">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4" ng-repeat="e in listknowledgessharingpopular" style="height:380px;">
+	        			<div class="service-wrapper2">
+	        				<div class="author-photo spc-up" ng-click="goDetail(e._id)">
+	        					<img ng-src="{{resolvedCover(e.cover)}}" height="200" width="100%" alt="Service Name">
+								<div style="float:right;margin-right: 9px;">
+									<h6>{{e.fileSize}}, {{e.totalSlide}} Slides</h6>
+								</div> 
+							</div>	
+							
+							<div class="post-info spc-min-up" style="height:160px;">
+								<a href="" style="color:black; text-align:left;" ng-model:"query.title" ng-click="goDetail(e._id)"><h4 style="line-height:18px;height:40px;"><b>{{e.title}}</b></h4></a>
+								<div class="post-date" style="padding-bottom:45px;">
+									<div class="author-photo" ng-click="goDetail(e._id)">
+										<div style="float:left;">
+											<img style="width:50px;height:50px;border-radius:40px;" ng-src="{{resolvedPhoto(e.createdBy.profile.photo)}}" class="img-circle" alt="Knowledges Sharing">
+										</div>
+									</div>
+									<div style="float:right;width: 80%;">
+										<div style="float:left; width: 100%;text-align:left;">
+										<h5>{{e.createdBy.fullName}}</h5>
+										<div>
+											<div class="date" style="float:left; font-size: 12px;" ng-click="goDetail(e._id)">{{e.created}} , {{e.totalLike}} likes</div>
+											<div style="float:right; font-size: 20px;weight:40px;"> 
+												<i ng-if="e.isLike" ng-click="unLike(e._id)" class="glyphicon clickable glyphicon-heart spc-minleft1" ng-style="httpLovePop{{e._id}}"></i>	
+												<i ng-if="!e.isLike" ng-click="upLike(e._id)" class="glyphicon clickable glyphicon-heart spc-minleft1" ng-style="httpLovePop{{e._id}}"></i>
+												<a ng-click="downloadFile(e._id)" download="yourFilename" style="color:#535b60">
+												<i class="glyphicon glyphicon-download-alt spc-minleft1"></i>
+												</a>
+												<i ng-if="e.isBookmark" ng-click="unBookmarks(e._id)" class="glyphicon glyphicon-bookmark spc-minleft1" ng-style="httpCall{{e._id}}"></i>
+												<i ng-if="!e.isBookmark" ng-click="upBookmarks(e._id)" class="glyphicon glyphicon-bookmark spc-minleft1" ng-style="httpCall{{e._id}}"></i>
+												
+											</div>
+										</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+		        			
+	        			</div>
+	        		</div>
+				</div>
+				<div ng-show="total < 1">
+					<h3>No Upcoming Knowledge Sharing. <br/><br/><br/><br/><br/></h3>
+				</div>
+				<div class="pagination-wrapper " ng-show="total > 0">
+					<ul uib-pagination total-items="offset" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true" num-pages="numPages" ng-change="pageChanged()"></ul>
+				</div>
+			</div>
+	    </div>
+	    <!-- End Posts List -->

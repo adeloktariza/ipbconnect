@@ -1,0 +1,75 @@
+<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Events</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+	    		<div class="row">
+	    			<!-- for filter events -->
+	    			<div class="col-sm-3 blog-sidebar">
+						<h4>Search Criteria</h4>
+						<form ng-submit="pageChanged()">
+							<div class="input-append">
+								<input class="form-control input-md" id="appendedInputButtons" type="text" placeholder="Event Title or Keywords .." ng-model="query.title">
+							</div>
+					<!-- 		<div class="input-append spc-up">
+								 <select class="form-control" ng-options="item._id as item.name for item in jobLocation" ng-model="query.jobLocationId">
+                                <option value="">-- Date --</option>
+                           		 </select>
+							</div> -->
+							<!-- <h4>Department</h4> -->
+							<div class="input-append spc-up">
+								<input class="form-control input-md" id="appendedInputButtons" type="text" placeholder="Minimum Price (IDR)" ng-model="query.price">
+							</div>
+							<div class="input-append spc-up">
+								<button class="btn form-control button-yellow" type="submit"><font color="black">Search</font></button>
+							</div>
+						</form>
+					</div>
+	    			<!-- list events -->
+	    			<div class="col-md-9">
+	    				<table class="events-list">
+	    					<tr ng-repeat = "e in listvacancy" ng-click="goDetail(e._id)">
+	    						<td>
+	    							<div class="col-sm-4">
+		    							<div class="service-image">
+				        					<img height="100px" ng-src="{{resolvedPhoto(e.picture)}}" alt="Service Name">
+				        				</div>
+			        				<div>
+	    						</td>
+	    						<td>
+	    							<div class="event-date">
+	    								<div class="event-day">{{e.startDate | date: 'dd' }}</div>
+	    								<div class="event-month">{{e.startDate | date: 'MMMM'}}</div>
+	    								<div class="event-month">{{e.startDate | date: 'yyyy' }}</div>
+	    							</div>
+	    						</td>
+	    						<td>
+	    							{{e.title}}
+	    						</td>
+	    						<td class="event-venue hidden-xs"><i class="icon-map-marker"></i> {{e.place}}</td>
+	    						<td class="event-price hidden-xs" ng-show="e.price == 0"><font color="green">FREE</font></td>
+	    						<td class="event-price hidden-xs" ng-hide="e.price == 0"><font color="green">{{e.price | currency:"Rp "}}</font></td>
+	    						<td><a href="" ng-click="goDetail(e._id)" class="btn btn-grey btn-sm event-more">Read More</a></td>
+	    					</tr>
+	    				</table>
+	    				<div ng-show="total < 1">
+							<h3>No Upcoming Events. <br/><br/><br/><br/><br/></h3>
+						</div>
+	    								<!-- Pagination -->
+						<div class="pagination-wrapper " ng-show="total > 0">
+								<ul uib-pagination total-items="offset" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true" num-pages="numPages" ng-change="pageChanged()"></ul>
+						</div>
+	    			</div>
+	    		</div>
+			</div>
+		</div>
+
+	  

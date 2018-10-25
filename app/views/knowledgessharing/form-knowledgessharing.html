@@ -1,0 +1,82 @@
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Form Knowledge Sharing</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+    		<flash-message
+			    duration="10000"
+			    show-close="true"
+			    on-dismiss="myCallback(flash);"
+			></flash-message> 
+	    	<form ng-submit="submit()">
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="title"><b>Title</b></label>
+							<input class="form-control" id="title" type="text" placeholder="" ng-model="form.title" />
+						</div>
+						<div class="form-group">
+							<label for="description"><b>Description</b></label>
+							<textarea class="form-control" id="description" md-maxlength="150" rows="5" cols="40" ng-model="form.description"></textarea>
+						</div>
+	    			</div>
+	    		</div>
+				
+				<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="category"><b>Category</b></label>
+							 <select id="category" class="form-control" ng-options="item._id as item.name for item in category" ng-model="form.category">
+                                <option value="">-- Choose Category --</option>
+                            </select>
+						</div>
+					</div>
+	    		</div>
+				
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="file"><b>File</b></label>
+							      <input class="form-control"
+								   type="file" 
+								   ngf-select 
+								   ng-model="form.file" 
+					               name="file" 
+					               accept="file/*" 
+					               ngf-max-size="5MB">
+								   </input>
+							<small class="grey-text">Maksimal ukuran file 5MB dalam format *pptx</small>
+						</div>
+	    			</div>
+	    		</div>
+
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+											
+							<button type="submit" class="btn pull-right button-right" ng-show="btnSubmit" ng-click="saveKnowledges()">Submit</button>
+							<button type="button" class="btn pull-right button-right" ng-click="editKnowledges()" ng-show="btnUpdate">Save</button>
+							<button type="button" class="btn pull-right button-right button-delete" ng-click="deleteKnowledges(e._id,e.title)" ng-show="btnDelete">Delete</button>
+							
+							<button class="btn button-cancel" ui-sref="app.knowledgessharing_list">Cancel</button>
+							
+							<button class="btn button-reset" ng-click="reset()">Reset</button>
+							
+						</div>
+	    			</div>
+	    		</div>
+	    		</form>
+			</div>
+		</div>
+
+	  
+
+

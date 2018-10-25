@@ -1,0 +1,125 @@
+		<!-- Press Coverage -->
+		<!-- Services -->
+        <div class="section">
+
+	        <div class="container">
+	        	 <flash-message
+				    duration="5000"
+				    show-close="true"
+				    on-dismiss="myCallback(flash);">
+				    </flash-message> 
+	        	<div class="row">
+	        	<!-- Featured News -->
+	        		<div class="col-sm-6 featured-news">
+	        			<h2 class="font-size"><a href="" ui-sref="app.verified"><i class="glyphicon glyphicon-check"></i> Verified Account ({{verifiedCount}})</a></h2>
+	        			<div class="row" ng-repeat="e in verifiedList">
+	        				<div class="col-xs-4" align="center">
+	        					<a href="" ng-click="openLightboxModal(e.profile.photo)">
+	        					<img ng-src="{{resolvedPhotoAccount(e.profile.photo)}}" height="100" width="100" alt="Post Title">
+	        					</a>
+	        				</div>
+	        				<div class="col-xs-8 spc-up">
+	        					<div class="caption"><a href="" ng-click="goDetailUser(e._id)">{{e.fullName}}</a></div>
+	        					<div class="date">{{e.created|date:"dd MMMM yyyy"}} </div>
+	        					<div class="intro"><b>{{e.studyProgramId.name}} - {{e.batch}}</b><br/>{{e.userType}}</div>
+	        					
+	        				</div>
+	        			</div>
+	        			<h4 ng-show="verifiedCount < 1">No verified account.</h4>
+	        		</div>
+	        		<!-- End Featured News -->
+	        		<!-- Latest News -->
+	        		<div class="col-sm-6 featured-news">
+	        			<h2 class="font-size"><a href="" ui-sref="app.unverified"><i class="glyphicon glyphicon-edit"></i> Unverified Account ({{unverifiedCount}})</a></h2>
+	        			<div class="row" ng-repeat="e in unverfiedList">
+	        				<div class="col-xs-4" align="center">
+	        					<a href="" ng-click="openLightboxModal(e.profile.photo)">
+	        					<img ng-src="{{resolvedPhotoAccount(e.profile.photo)}}" height="100" width="100" alt="Post Title">
+	        					</a>
+	        				</div>
+	        				<div class="col-xs-8 spc-up">
+	        					<div class="caption"><a href="" ng-click="goDetailUser(e._id)">{{e.fullName}}</a></div>
+	        					<div class="date">{{e.created|date:"dd MMMM yyyy"}} </div>
+	        					<div class="intro"><b>{{e.studyProgramId.name}} - {{e.batch}}</b><br/>{{e.userType}}</div>
+	        					
+	        				</div>
+	        			</div>
+	        			<h4 ng-show="unverifiedCount < 1">No unverified account.</h4>
+	        		</div>
+	        		<!-- End Featured News -->
+	        	</div>
+	        </div>
+	    </div>
+	    <!-- End Services -->
+
+
+		<!-- Pricing Table -->
+	    <div class="section">
+	    	<div class="container">
+	    		<h2 class="font-size"><a href="" ui-sref="app.events"><i class="glyphicon glyphicon-calendar"></i> Events</a></h2>
+	        	<div class="row">
+	        		<div class="pricing-wrapper col-md-12">
+						<div class="pricing-plan"  style="margin-right:40pt;" ng-repeat="e in listevents" >
+							<div class="ribbon-wrapper">
+								<div class="price-ribbon ribbon-green">New</div>
+							</div>
+							<h2 class="pricing-plan-title">{{e.title|limitTo:'28'}} ...</h2>
+							<p class="pricing-plan-price"><img ng-src="{{resolvedPhoto(e.createdBy.picture)}}" height="100" width="100" alt="Post Title"></p>
+							<ul class="pricing-plan-features">
+								<li><strong>{{e.startDate|date}}</strong></li>
+								<li>{{e.place}}</li>
+								<li ng-hide="e.price == 0">{{e.price|currency:"IDR "}}</li>
+								<li ng-show="e.price == 0">FREE</li>
+							</ul>
+							<a href="" ng-click="goDetail(e._id)" class="btn">Read More</a>
+						</div>&nbsp;
+						<h4 ng-show="eventCount < 1">No upcoming event.</h4>
+	        		</div>
+	        	</div>
+	    	</div>
+	    </div>
+	    <!-- End Pricing Table -->
+
+	    <!-- Pricing Table -->
+	    <div class="section">
+	    	<div class="container">
+	    		<h2 class="font-size"><a href="" ui-sref="app.vacancy"><i class="glyphicon glyphicon-lock"></i> Job Vacancy</a></h2>
+	        	<div class="row">
+	        		<div class="col-md-12">
+						<table class="jobs-list">
+ 	    					<tr>
+ 	    						<th>Job Title</th>
+ 	    						<th>Company</th>
+ 	    						<th>Salary</th>
+ 	    						<th>Close Date</th>
+ 	    						<th>Location</th>
+ 	    					</tr>
+ 	    					<tr ng-repeat="row in listvacancy">
+ 	    						<!-- Title -->
+ 	    						<td class="job-position">
+ 	    							<a href="" ng-click="goDetailVacancy(row._id)">{{row.title}}</a> 
+ 	    							<span class="label label-danger">New</span>
+ 	    						</td>
+ 	    						<!-- company -->
+ 	    						<td class="job-position">
+ 	    							{{row.company}}
+ 	    						</td>
+ 	    						<!-- salary -->
+ 	    						<td class="job-location">
+ 	    							<div class="job-country"><font color="green">{{row.salaryMin|number:2}} - {{row.salaryMax|number:2}}</font></div>
+ 	    							<!-- <div class="job-city">London</div> -->
+ 	    						</td>
+ 	    						<!-- Job Type -->
+	    						<td class="job-type hidden-phone"><font color="red">{{row.closeDate|date}}</font></td>
+	    						<td class="job-type hidden-phone">{{row.jobLocationId.name}}</td>
+ 	    					</tr>
+ 	    					<h4 ng-show="vacancyCount < 1" align="center">No upcoming vacancy.</h4>
+ 	    				</table>
+	        		</div>
+	        	</div>
+	    	</div>
+	    </div>
+	    <!-- End Pricing Table -->
+
+
+		

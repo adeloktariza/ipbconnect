@@ -1,0 +1,126 @@
+ <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container" style="padding-bottom: 10px;">
+	        	<div class="menuextras">
+					<div class="extras">
+						<ul>
+			        		<li>
+			        			<div class="testimonial">
+				        			<div class="author-photo">
+										<img ng-src="{{resolvedPhotoAccount(user.profile.photo)}}" height="50" width="50" alt="Author 1">
+									</div>
+								</div>
+			        		</li>
+			        		<li style="margin-top:10px;">
+	        				    <div uib-dropdown dropdown-append-to-body>
+							      <a href="" id="btn-append-to-body" uib-dropdown-toggle>
+							        Hi, {{user.fullName}} <span class="caret"></span>
+							      </a>
+							      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+							        <li role="menuitem"><a href="" ui-sref="app.setting">Setting</a></li>
+							        <li class="divider"></li>
+							        <li role="menuitem"><a href="" ui-sref="app.events_list">My Activity</a></li>
+							        <li class="divider"></li>
+									 <li role="menuitem"><a href="" ui-sref="app.knowledgessharing_bookmarks">My Bookmarks</a></li>
+							        <li class="divider"></li>
+							        <li role="menuitem"><a href="" ng-click="logout()">Logout</a></li>
+							      </ul>
+							    </div>
+			        		</li>
+			        	</ul>
+					</div>
+		        </div>
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper">
+							<a href="" ui-sref="app.home" ui-sref-opts="{reload: true}"><img src="app/assets/img/logo_ipb.png" alt="Multipurpose Twitter Bootstrap Template" width="70px" height="70px">
+							 <!-- IPB Connect -->
+							</a>
+						</li>
+						<li id="home">
+							<a style="padding-right:2px" href="" ui-sref="app.home" ui-sref-opts="{reload: true}">Home</a>
+						</li>
+						<li id="event">
+							<a style="padding-right:2px" href="" ui-sref="app.events" ui-sref-opts="{reload: true}">Events</a>
+						</li>
+						<li id="vacancy">
+							<a style="padding-right:2px" href="" ui-sref="app.vacancy" ui-sref-opts="{reload: true}">Job Vacancy</a>
+						</li>
+						<li id="memory">
+							<a style="padding-right:2px" href="" ui-sref="app.memories" ui-sref-opts="{reload: true}">Memory</a>
+						</li>
+						<li id="alumni">
+							<a style="padding-right:2px" href="" ui-sref="app.alumni" ui-sref-opts="{reload: true}">Explore Alumni</a>
+						</li>
+						<li id="sharefile">
+							<a style="padding-right:2px" href="" ui-sref="app.knowledgessharing" ui-sref-opts="{reload: true}">Knowledge Sharing</a>
+						</li>
+					</ul>
+					<!-- <br/> -->
+				</nav>
+			</div>
+		</div>
+
+		<ui-view></ui-view>
+
+		 <!-- Footer selalu di load setiap halaman -->
+	    <!-- Footer -->
+	    <div class="footer">
+	    	<div class="container">
+		    	<div class="row">
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>IPB Connect</h3>
+		    			<h5><a>Our Team</a></h5>
+		    			<h5><a>User Guide</a></h5>
+						<!-- <a href="http://www.ipb.ac.id"><img align="middle" src="app/assets/img/logo_ipb.png" alt="IPB" height="150px" width="150px"></a> -->
+
+		    		</div>
+		    		<div class="col-footer col-md-3 col-xs-6">
+		    			<h3>Navigate</h3>
+		    			<ul class="no-list-style footer-navigate-section">
+		    				<li><a href="" ui-sref="app.home">Home</a></li>
+		    				<li><a href="" ui-sref="app.events">Events</a></li>
+		    				<li><a href="" ui-sref="app.vacancy" >Vacancy</a></li>
+		    				<li><a href="" ui-sref="app.memories">Memories</a></li>
+							<li><a href="" ui-sref="app.knowledgessharing">Knowledge Sharing</a></li>
+		    			</ul>
+		    		</div>
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Contacts</h3>
+		    			<p class="contact-us-details">
+	        				<b>Address:</b> Institut Pertanian Bogor<br/>
+	        				<b>Phone:</b> +6251 23 654321<br/>
+	        				<b>Fax:</b> +6251 23 654321<br/>
+	        				<b>Email:</b> <a href="ipbconnect@ipb.ac.id">ipbconnect@ipb.ac.id</a>
+	        			</p>
+		    		</div>
+		<!--     		<div class="col-footer col-md-2 col-xs-6">
+		    			<h3>Stay Connected</h3>
+		    			<ul class="footer-stay-connected no-list-style">
+		    				<li><a href="#" class="facebook"></a></li>
+		    				<li><a href="#" class="twitter"></a></li>
+		    				<li><a href="#" class="googleplus"></a></li>
+		    			</ul>
+		    		</div> -->
+		    	</div>
+		    	<br/>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright">&copy; 2017 IPB Connect. All rights reserved.</div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+	    <script src="app/assets/js/jquery.min.js"></script>
+	    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	    <script>window.jQuery || document.write('<script src="app/assets/js/jquery-1.9.1.min.js"><\/script>')</script>
+	    <script src="app/assets/js/bootstrap.min.js"></script>
+	    <script src="app/assets/js/leaflet.js"></script>
+	    <script src="app/assets/js/jquery.fitvids.js"></script>
+        <script src="app/assets/js/jquery.sequence-min.js"></script>
+        <script src="app/assets/js/jquery.bxslider.js"></script>
+        <script src="app/assets/js/main-menu.js"></script>
+        <script src="app/assets/js/template.js"></script>
+
