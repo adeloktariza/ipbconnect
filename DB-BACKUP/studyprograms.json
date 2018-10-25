@@ -1,0 +1,336 @@
+{
+	"_id" : ObjectId("5840bd8335da2d6d1a8c9d8a"),
+	"createdBy" : ObjectId("583e18592776023f226892d0"),
+	"facultyId" : ObjectId("5840bd4e35da2d6d1a8c9d88"),
+	"modified" : ISODate("2016-12-02T07:17:07.993+07:00"),
+	"name" : "Ilmu Komputer"
+},
+{
+	"_id" : ObjectId("58562c51ed848d3d17f378f3"),
+	"created" : ISODate("2016-12-18T13:27:29.897+07:00"),
+	"createdBy" : ObjectId("583e18592776023f226892d0"),
+	"facultyId" : ObjectId("5840bd4e35da2d6d1a8c9d88"),
+	"modified" : ISODate("2016-12-18T13:27:29.899+07:00"),
+	"name" : "Statistika"
+},
+{
+	"_id" : ObjectId("58822b0cefa148bf056d2192"),
+	"created" : ISODate("2017-01-20T22:21:48.761+07:00"),
+	"createdBy" : ObjectId("583e18592776023f226892d0"),
+	"facultyId" : ObjectId("5840bd4e35da2d6d1a8c9d88"),
+	"modified" : ISODate("2017-01-20T22:21:48.762+07:00"),
+	"name" : "Fisika"
+},
+{
+	"_id" : ObjectId("58ac5f1f28d14d80633bdb71"),
+	"created" : ISODate("2017-02-21T22:39:11.122+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5d2f28d14d80633bdb5c"),
+	"modified" : ISODate("2017-02-21T22:39:11.122+07:00"),
+	"name" : "MANAJEMEN SUMBERDAYA LAHAN"
+},
+{
+	"_id" : ObjectId("58ac5f3628d14d80633bdb73"),
+	"created" : ISODate("2017-02-21T22:39:34.207+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5d2f28d14d80633bdb5c"),
+	"modified" : ISODate("2017-02-21T22:39:34.207+07:00"),
+	"name" : "AGRONOMI DAN HORTIKULTURA"
+},
+{
+	"_id" : ObjectId("58ac5f5628d14d80633bdb75"),
+	"created" : ISODate("2017-02-21T22:40:06.766+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5d2f28d14d80633bdb5c"),
+	"modified" : ISODate("2017-02-21T22:40:06.766+07:00"),
+	"name" : "PROTEKSI TANAMAN"
+},
+{
+	"_id" : ObjectId("58ac5f6328d14d80633bdb77"),
+	"created" : ISODate("2017-02-21T22:40:19.605+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5d2f28d14d80633bdb5c"),
+	"modified" : ISODate("2017-02-21T22:40:19.605+07:00"),
+	"name" : "ARSITEKTUR LANSKAP"
+},
+{
+	"_id" : ObjectId("58ac5f8b28d14d80633bdb79"),
+	"created" : ISODate("2017-02-21T22:40:59.353+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac37ed19b30a9859b221d0"),
+	"modified" : ISODate("2017-02-21T22:40:59.353+07:00"),
+	"name" : "KEDOKTERAN HEWAN"
+},
+{
+	"_id" : ObjectId("58ac6365c11d097d65605c9d"),
+	"created" : ISODate("2017-02-21T22:57:25.331+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dca28d14d80633bdb5e"),
+	"modified" : ISODate("2017-02-21T22:57:25.331+07:00"),
+	"name" : "TEKNOLOGI & MANAJEMEN PERIKANAN BUDIDAYA"
+},
+{
+	"_id" : ObjectId("58ac6375c11d097d65605c9e"),
+	"created" : ISODate("2017-02-21T22:57:41.631+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dca28d14d80633bdb5e"),
+	"modified" : ISODate("2017-02-21T22:57:41.631+07:00"),
+	"name" : "MANAJEMEN SUMBERDAYA PERAIRAN"
+},
+{
+	"_id" : ObjectId("58ac6398c11d097d65605c9f"),
+	"created" : ISODate("2017-02-21T22:58:16.076+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dca28d14d80633bdb5e"),
+	"modified" : ISODate("2017-02-21T22:58:16.076+07:00"),
+	"name" : "TEKNOLOGI HASIL PERAIRAN"
+},
+{
+	"_id" : ObjectId("58ac63b2c11d097d65605ca0"),
+	"created" : ISODate("2017-02-21T22:58:42.162+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dca28d14d80633bdb5e"),
+	"modified" : ISODate("2017-02-21T22:58:42.162+07:00"),
+	"name" : "TEKNOLOGI & MANAJEMEN PERIKANAN TANGKAP"
+},
+{
+	"_id" : ObjectId("58ac651d6a191bab65818b24"),
+	"created" : ISODate("2017-02-21T23:04:45.267+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dca28d14d80633bdb5e"),
+	"modified" : ISODate("2017-02-21T23:04:45.267+07:00"),
+	"modifiedBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"name" : "ILMU DAN TEKNOLOGI KELAUTAN"
+},
+{
+	"_id" : ObjectId("58ac6b66973fb15a6658280c"),
+	"created" : ISODate("2017-02-21T23:31:34.575+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dd628d14d80633bdb60"),
+	"modified" : ISODate("2017-02-21T23:31:34.576+07:00"),
+	"name" : "TEKNOLOGI PRODUKSI TERNAK"
+},
+{
+	"_id" : ObjectId("58ac6b76973fb15a6658280d"),
+	"created" : ISODate("2017-02-21T23:31:50.065+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dd628d14d80633bdb60"),
+	"modified" : ISODate("2017-02-21T23:31:50.065+07:00"),
+	"name" : "NUTRISI DAN TEKNOLOGI PAKAN"
+},
+{
+	"_id" : ObjectId("58ac6b8a973fb15a6658280e"),
+	"created" : ISODate("2017-02-21T23:32:10.205+07:00"),
+	"createdBy" : ObjectId("589ef512ed3e86614d9847bb"),
+	"facultyId" : ObjectId("58ac5dd628d14d80633bdb60"),
+	"modified" : ISODate("2017-02-21T23:32:10.205+07:00"),
+	"name" : "TEKNOLOGI HASIL TERNAK"
+},
+{
+	"_id" : ObjectId("58ae803f6d1f436548a46a1a"),
+	"created" : ISODate("2017-02-23T13:25:03.652+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5de028d14d80633bdb63"),
+	"modified" : ISODate("2017-02-23T13:25:03.654+07:00"),
+	"name" : "MANAJEMEN HUTAN"
+},
+{
+	"_id" : ObjectId("58ae804f6d1f436548a46a1b"),
+	"created" : ISODate("2017-02-23T13:25:19.953+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5de028d14d80633bdb63"),
+	"modified" : ISODate("2017-02-23T13:25:19.953+07:00"),
+	"name" : "TEKNOLOGI HASIL HUTAN"
+},
+{
+	"_id" : ObjectId("58ae80666d1f436548a46a1c"),
+	"created" : ISODate("2017-02-23T13:25:42.407+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5de028d14d80633bdb63"),
+	"modified" : ISODate("2017-02-23T13:25:42.407+07:00"),
+	"name" : "KONSERVASI SUMBERDAYA HUTAN& EKOWISATA"
+},
+{
+	"_id" : ObjectId("58ae80776d1f436548a46a1d"),
+	"created" : ISODate("2017-02-23T13:25:59.269+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5de028d14d80633bdb63"),
+	"modified" : ISODate("2017-02-23T13:25:59.270+07:00"),
+	"name" : "SILVIKULTUR"
+},
+{
+	"_id" : ObjectId("58ae808c6d1f436548a46a1e"),
+	"created" : ISODate("2017-02-23T13:26:20.899+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e4328d14d80633bdb65"),
+	"modified" : ISODate("2017-02-23T13:26:20.899+07:00"),
+	"name" : "TEKNIK MESIN DAN BIOSISTEM"
+},
+{
+	"_id" : ObjectId("58ae809b6d1f436548a46a1f"),
+	"created" : ISODate("2017-02-23T13:26:35.363+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e4328d14d80633bdb65"),
+	"modified" : ISODate("2017-02-23T13:26:35.363+07:00"),
+	"name" : "TEKNOLOGI PANGAN"
+},
+{
+	"_id" : ObjectId("58ae80b56d1f436548a46a20"),
+	"created" : ISODate("2017-02-23T13:27:01.111+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e4328d14d80633bdb65"),
+	"modified" : ISODate("2017-02-23T13:27:01.111+07:00"),
+	"name" : "TEKNOLOGI INDUSTRI PERTANIAN"
+},
+{
+	"_id" : ObjectId("58ae80cc6d1f436548a46a21"),
+	"created" : ISODate("2017-02-23T13:27:24.133+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e4328d14d80633bdb65"),
+	"modified" : ISODate("2017-02-23T13:27:24.133+07:00"),
+	"name" : "TEKNIK SIPIL DAN LINGKUNGAN"
+},
+{
+	"_id" : ObjectId("58ae80e56d1f436548a46a22"),
+	"created" : ISODate("2017-02-23T13:27:49.907+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:27:49.907+07:00"),
+	"name" : "STATISTIKA"
+},
+{
+	"_id" : ObjectId("58ae80f76d1f436548a46a23"),
+	"created" : ISODate("2017-02-23T13:28:07.536+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:28:07.536+07:00"),
+	"name" : "METEOROLOGI TERAPAN"
+},
+{
+	"_id" : ObjectId("58ae810b6d1f436548a46a24"),
+	"created" : ISODate("2017-02-23T13:28:27.041+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:28:27.041+07:00"),
+	"name" : "BIOLOGI"
+},
+{
+	"_id" : ObjectId("58ae81186d1f436548a46a25"),
+	"created" : ISODate("2017-02-23T13:28:40.216+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:28:40.216+07:00"),
+	"name" : "KIMIA"
+},
+{
+	"_id" : ObjectId("58ae81286d1f436548a46a26"),
+	"created" : ISODate("2017-02-23T13:28:56.257+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:28:56.257+07:00"),
+	"name" : "MATEMATIKA"
+},
+{
+	"_id" : ObjectId("58ae81356d1f436548a46a27"),
+	"created" : ISODate("2017-02-23T13:29:09.765+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:29:09.767+07:00"),
+	"name" : "ILMU KOMPUTER"
+},
+{
+	"_id" : ObjectId("58ae81466d1f436548a46a28"),
+	"created" : ISODate("2017-02-23T13:29:26.013+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:29:26.013+07:00"),
+	"name" : "FISIKA"
+},
+{
+	"_id" : ObjectId("58ae815c6d1f436548a46a29"),
+	"created" : ISODate("2017-02-23T13:29:48.265+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:29:48.265+07:00"),
+	"name" : "BIOKIMIA"
+},
+{
+	"_id" : ObjectId("58ae81716d1f436548a46a2a"),
+	"created" : ISODate("2017-02-23T13:30:09.845+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"modified" : ISODate("2017-02-23T13:30:09.845+07:00"),
+	"name" : "AKTUARIA"
+},
+{
+	"_id" : ObjectId("58ae818e6d1f436548a46a2b"),
+	"created" : ISODate("2017-02-23T13:30:38.636+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7f28d14d80633bdb69"),
+	"modified" : ISODate("2017-02-23T13:30:38.636+07:00"),
+	"name" : "EKONOMI DAN STUDI PEMBANGUNAN"
+},
+{
+	"_id" : ObjectId("58ae81a76d1f436548a46a2c"),
+	"created" : ISODate("2017-02-23T13:31:03.085+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7f28d14d80633bdb69"),
+	"modified" : ISODate("2017-02-23T13:31:03.085+07:00"),
+	"name" : "MANAJEMEN"
+},
+{
+	"_id" : ObjectId("58ae81b96d1f436548a46a2d"),
+	"created" : ISODate("2017-02-23T13:31:21.656+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7f28d14d80633bdb69"),
+	"modified" : ISODate("2017-02-23T13:31:21.656+07:00"),
+	"name" : "AGRIBISNIS"
+},
+{
+	"_id" : ObjectId("58ae81c76d1f436548a46a2e"),
+	"created" : ISODate("2017-02-23T13:31:35.643+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7f28d14d80633bdb69"),
+	"modified" : ISODate("2017-02-23T13:31:35.643+07:00"),
+	"name" : "EKONOMI SUMBERDAYA DAN LINGKUNGAN"
+},
+{
+	"_id" : ObjectId("58ae81d66d1f436548a46a2f"),
+	"created" : ISODate("2017-02-23T13:31:50.184+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5e7f28d14d80633bdb69"),
+	"modified" : ISODate("2017-02-23T13:31:50.184+07:00"),
+	"name" : "EKONOMI SYARIAH"
+},
+{
+	"_id" : ObjectId("58ae81e66d1f436548a46a30"),
+	"created" : ISODate("2017-02-23T13:32:06.840+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5ec928d14d80633bdb6b"),
+	"modified" : ISODate("2017-02-23T13:32:06.840+07:00"),
+	"name" : "ILMU GIZI"
+},
+{
+	"_id" : ObjectId("58ae81fc6d1f436548a46a31"),
+	"created" : ISODate("2017-02-23T13:32:28.997+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5ec928d14d80633bdb6b"),
+	"modified" : ISODate("2017-02-23T13:32:28.997+07:00"),
+	"name" : "ILMU KELUARGA DAN KONSUMEN"
+},
+{
+	"_id" : ObjectId("58ae820c6d1f436548a46a32"),
+	"created" : ISODate("2017-02-23T13:32:44.923+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5ec928d14d80633bdb6b"),
+	"modified" : ISODate("2017-02-23T13:32:44.923+07:00"),
+	"name" : "KOMUNIKASI DAN PENGEMBANGAN MASYARAKAT"
+},
+{
+	"_id" : ObjectId("58ae82206d1f436548a46a33"),
+	"created" : ISODate("2017-02-23T13:33:04.031+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"facultyId" : ObjectId("58ac5ee528d14d80633bdb6f"),
+	"modified" : ISODate("2017-02-23T13:33:04.032+07:00"),
+	"name" : "BISNIS"
+},

@@ -1,0 +1,56 @@
+{
+	"_id" : ObjectId("582466d0269852c6174909c9"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Administrasi",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},
+{
+	"_id" : ObjectId("582466d0269852c6174909ca"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Administrasi",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},
+{
+	"_id" : ObjectId("582466ee269852c6174909cb"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Bidan",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},
+{
+	"_id" : ObjectId("58246708269852c6174909cc"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Designer Grafis Komputer",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},
+{
+	"_id" : ObjectId("58246718269852c6174909cd"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Editor",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},
+{
+	"_id" : ObjectId("5824671c269852c6174909ce"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Fisikawan",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},
+{
+	"_id" : ObjectId("5824672c269852c6174909cf"),
+	"created" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"createdBy" : "string",
+	"name" : "Ti, Web Developer",
+	"updated" : ISODate("2016-11-10T07:00:00.000+07:00"),
+	"updatedBy" : "string"
+},

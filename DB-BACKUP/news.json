@@ -1,0 +1,122 @@
+{
+	"_id" : ObjectId("59d8802c20a3cebe71cb58fe"),
+	"content" : "konten",
+	"created" : ISODate("2017-10-07T14:20:12.674+07:00"),
+	"createdBy" : ObjectId("59d5228ea7303fa428ee4d06"),
+	"photos" : [
+		"news-1507360808653.jpg",
+		"news-1507360810911.jpg",
+		"news-1507360811668.jpg"
+	],
+	"title" : "tes berita"
+},
+{
+	"_id" : ObjectId("59d8818420a3cebe71cb5900"),
+	"content" : "tes",
+	"created" : ISODate("2017-10-07T14:25:56.366+07:00"),
+	"createdBy" : ObjectId("59d5228ea7303fa428ee4d06"),
+	"photos" : [
+		"news-1507361156220.jpg",
+		"news-1507361156351.jpg"
+	],
+	"title" : "ini title"
+},
+{
+	"_id" : ObjectId("5a55ed0c3e39052032908699"),
+	"comments" : [ ],
+	"content" : "ini konten dgn 1 foto",
+	"created" : ISODate("2018-01-10T17:38:04.948+07:00"),
+	"createdBy" : ObjectId("59c9d6075f15145011432fb6"),
+	"photos" : [
+		"news-1515580684913jdlem.png"
+	],
+	"title" : "ugl news",
+	"totalComment" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("5a55ed283e3905203290869a"),
+	"comments" : [ ],
+	"content" : "konten berita",
+	"created" : ISODate("2018-01-10T17:38:32.811+07:00"),
+	"createdBy" : ObjectId("59c9d6075f15145011432fb6"),
+	"photos" : [
+		"news-1515580712751hgemg.png"
+	],
+	"title" : "judul berita",
+	"totalComment" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("5a706f4fe0e480e259223916"),
+	"comments" : [ ],
+	"content" : "ini konten dgn 1 foto",
+	"created" : ISODate("2018-01-30T20:12:47.155+07:00"),
+	"createdBy" : ObjectId("59c9d6075f15145011432fb6"),
+	"photos" : [
+		"news-1517317966858gnlmb.png",
+		"news-1517317966890mkina.png",
+		"news-1517317966897fkkch.png"
+	],
+	"title" : "ugl news",
+	"totalComment" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("5a706f6de0e480e259223917"),
+	"comments" : [ ],
+	"content" : "content update",
+	"created" : ISODate("2018-01-30T20:13:16.999+07:00"),
+	"createdBy" : ObjectId("59c09478af15403969eb16de"),
+	"photos" : [
+		"news-1517339904504hbjck.png",
+		"news-1517339904512ecnid.png",
+		"news-1517339904514mkcai.png"
+	],
+	"title" : "title update 3",
+	"totalComment" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("5a906c7fa6bf394f1190abe6"),
+	"comments" : [ ],
+	"content" : "ini konten dgn 1 foto",
+	"created" : ISODate("2018-02-24T02:33:19.120+07:00"),
+	"createdBy" : ObjectId("59c9d6075f15145011432fb6"),
+	"photos" : [
+		"news-1519414399116eeekb.png"
+	],
+	"title" : "ugl news",
+	"totalComment" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("5a938a76d989f15d604ad3ae"),
+	"comments" : [ ],
+	"content" : "ini konten dgn 1 foto",
+	"created" : ISODate("2018-02-26T11:17:58.627+07:00"),
+	"createdBy" : ObjectId("59c9d6075f15145011432fb6"),
+	"photos" : [
+		"news-1519618676436bdlfb.png",
+		"news-1519618677506eafkl.png",
+		"news-1519618677886cmalk.png",
+		"news-1519618678170hhllf.png",
+		"news-1519618678523cddai.png"
+	],
+	"title" : "ugl news",
+	"totalComment" : NumberInt("0")
+},
+{
+	"_id" : ObjectId("5aab88ed455bece835e3a0c5"),
+	"comments" : [
+		{
+			"_id" : ObjectId("5aab8953455bece835e3a0c6"),
+			"created" : ISODate("2018-03-16T16:07:31.817+07:00"),
+			"createdBy" : ObjectId("59c09478af15403969eb16de"),
+			"value" : "tes comment 3"
+		}
+	],
+	"content" : "ini konten dgn 1 foto",
+	"created" : ISODate("2018-03-16T16:05:49.016+07:00"),
+	"createdBy" : ObjectId("59c09478af15403969eb16de"),
+	"photos" : [
+		"news-1521191148981flmmf.png"
+	],
+	"title" : "ugl news",
+	"totalComment" : NumberInt("1")
+},

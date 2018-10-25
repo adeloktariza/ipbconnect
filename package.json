@@ -1,0 +1,39 @@
+{
+  "name": "ipb-connect-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "basic-auth": "^1.1.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.10.2",
+    "chance": "^1.0.11",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "^4.0.1",
+    "docx-pdf-pagecount": "0.0.3",
+    "ejs": "^2.5.7",
+    "express": "^4.11.2",
+    "express-session": "^1.14.2",
+    "file-size": "^1.0.0",
+    "jade": "~1.9.1",
+    "jsonwebtoken": "^8.3.0",
+    "method-override": "^2.3.1",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.1",
+    "multer": "^1.3.0",
+    "nodemon": "^1.18.4",
+    "office-converter": "^1.0.2",
+    "passport": "^0.3.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "ppt2png": "0.0.6",
+    "sendgrid": "^4.7.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.0.3"
+  }
+}

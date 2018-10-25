@@ -1,0 +1,66 @@
+{
+	"_id" : ObjectId("58ac37ed19b30a9859b221d1"),
+	"created" : ISODate("2017-02-21T19:51:57.404+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "KEDOKTERAN HEWAN"
+},
+{
+	"_id" : ObjectId("58ac5d2f28d14d80633bdb5d"),
+	"created" : ISODate("2017-02-21T22:30:55.433+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "PERTANIAN"
+},
+{
+	"_id" : ObjectId("58ac5dca28d14d80633bdb5f"),
+	"created" : ISODate("2017-02-21T22:33:30.409+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "PERIKANAN DAN ILMU KELAUTAN"
+},
+{
+	"_id" : ObjectId("58ac5dd628d14d80633bdb61"),
+	"created" : ISODate("2017-02-21T22:33:42.382+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "PETERNAKAN"
+},
+{
+	"_id" : ObjectId("58ac5de028d14d80633bdb63"),
+	"created" : ISODate("2017-02-21T22:33:52.237+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "KEHUTANAN"
+},
+{
+	"_id" : ObjectId("58ac5e4328d14d80633bdb65"),
+	"created" : ISODate("2017-02-21T22:35:31.016+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "TEKNOLOGI PERTANIAN"
+},
+{
+	"_id" : ObjectId("58ac5e7328d14d80633bdb67"),
+	"created" : ISODate("2017-02-21T22:36:19.203+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "MATEMATIKA DAN ILMU PENGETAHUAN ALAM"
+},
+{
+	"_id" : ObjectId("58ac5e7f28d14d80633bdb69"),
+	"created" : ISODate("2017-02-21T22:36:31.506+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "EKONOMI DAN MANAJEMEN"
+},
+{
+	"_id" : ObjectId("58ac5ec928d14d80633bdb6b"),
+	"created" : ISODate("2017-02-21T22:37:45.586+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "EKOLOGI MANUSIA"
+},
+{
+	"_id" : ObjectId("58ac5eda28d14d80633bdb6d"),
+	"created" : ISODate("2017-02-21T22:38:02.217+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "DIPLOMA"
+},
+{
+	"_id" : ObjectId("58ac5ee528d14d80633bdb6f"),
+	"created" : ISODate("2017-02-21T22:38:13.856+07:00"),
+	"createdBy" : ObjectId("587a5aadad63f4e94e2af4b5"),
+	"name" : "SEKOLAH BISNIS"
+},
