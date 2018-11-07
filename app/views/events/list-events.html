@@ -1,0 +1,58 @@
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>My Activity</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+	    		<flash-message
+				    duration="10000"
+				    show-close="true"
+				    on-dismiss="myCallback(flash);"
+				></flash-message> 
+	    		<ul class="nav nav-tabs">
+	    			<li class="active"><a href="" ui-sref="app.events_list" style="background-color: transparent;">Events</a></li>
+	    			<li><a href="" ui-sref="app.vacancy_list">Vacancy</a></li>
+	    			<li><a href="" ui-sref="app.memories_list">Memories</a></li>
+					<li><a href="" ui-sref="app.knowledgessharing_list">Knowledge Sharing</a></li>
+	    		</ul>
+	    		<br/>
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<button class="btn pull-right" style="background-color: green;" ui-sref="app.events_form"><i class="glyphicon glyphicon-plus"></i> Add Events</button>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<!-- for filter events -->
+	    			<!-- <div class="col-md-2"> -->
+	    			<!-- <div class="col-sm-2 blog-sidebar">
+						
+					</div> -->
+	    			<!-- </div> -->
+	    			<!-- list events -->
+	    			<div class="col-md-12">
+	    						<div class="comment-form-wrapper">
+									<table class="table table-hover" ng-table="tableEvents" show-filter="true">
+										<tr ng-repeat="e in $data" ng-click="goEdit(e._id)">
+											<td data-title="'Title'" filter="{title: 'text'}">{{e.title}}</td>
+											<td data-title="'Description'" filter="{description: 'text'}">{{e.description}}</td>
+											<td data-title="'Place'" filter="{place: 'text'}">{{e.place}}</td>
+											<td data-title="'Contact'" filter="{contact: 'text'}">{{e.contact}}</td>
+										</tr>
+									</table>
+									<h4 ng-show="size < 1" align="center">No upcoming events. Let's make some event.</h4>
+								</div>
+	    			</div>
+	    		</div>
+			</div>
+		</div>
+
+	  
+
+

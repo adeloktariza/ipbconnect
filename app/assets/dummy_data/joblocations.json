@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5828510a1e33db55293786a7"},"name":"Jawa Barat","createdBy":"string","updatedBy":"string"}
+{"_id":{"$oid":"582dc6be67588549368d6d62"},"name":"Jawa Tengah","created":{"$date":"2016-11-17T15:03:26.459Z"},"modified":{"$date":"2016-11-17T15:03:26.461Z"}}
+{"_id":{"$oid":"582dc6c767588549368d6d63"},"name":"Bali","created":{"$date":"2016-11-17T15:03:35.235Z"},"modified":{"$date":"2016-11-17T15:03:35.235Z"}}
+{"_id":{"$oid":"5833908af1d5db012de50626"},"name":"Sumatera Barat","created":{"$date":"2016-11-20T00:00:00.000Z"},"createdBy":{"$oid":"5828510a1e33db55293786a7"},"modified":{"$date":"2016-11-21T00:00:00.000Z"},"modifiedBy":{"$oid":"5828510a1e33db55293786a9"}}

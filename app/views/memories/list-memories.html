@@ -1,0 +1,70 @@
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>My Activity</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+	    		<flash-message
+				    duration="10000"
+				    show-close="true"
+				    on-dismiss="myCallback(flash);"
+				></flash-message> 
+	    		<ul class="nav nav-tabs">
+	    			<li><a href="" ui-sref="app.events_list">Events</a></li>
+	    			<li><a href="" ui-sref="app.vacancy_list">Vacancy</a></li>
+	    			<li class="active"><a href="" style="background-color: transparent;">Memories</a></li>
+					<li><a href="" ui-sref="app.knowledgessharing_list">Knowledge Sharing</a></li>
+	    		</ul>
+	    		<br/>
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<button class="btn pull-right" style="background-color: green;" ui-sref="app.memories_form"><i class="glyphicon glyphicon-plus"></i> Add Memories</button>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<!-- Post -->
+					<div class="col-md-3 col-sm-6" ng-repeat="e in listMemoryById">
+						<div class="blog-post">
+							<!-- Post Info -->
+							<div class="post-info">
+								<div class="post-date">
+									<div class="date">{{e.created | date:"dd"}} {{e.created | date:"MMM"}}, {{e.created | date:"yyyy"}}</div>
+								</div>
+								<div class="post-comments-count">
+									<a title="Show Comments"><i class="glyphicon glyphicon-comment icon-white"></i>{{e.comments.length}}</a>
+								</div>
+							</div>
+							<!-- End Post Info -->
+							<!-- Post Image -->
+							<a href="page-blog-post-right-sidebar.html"><img ng-src="{{resolvedPhoto(e.photo)}}" class="post-image" alt="Post Title"></a>
+							<!-- End Post Image -->
+							<!-- Post Title & Summary -->
+							<div class="post-title">
+								<h3><a href="page-blog-post-right-sidebar.html">Caption</a></h3>
+							</div>
+							<div class="post-summary">
+								<p>{{e.caption}}</p>
+							</div>
+							<!-- End Post Title & Summary -->
+							<div class="post-more">
+								<a href="" ng-click="deleteMemory(e._id)" class="btn btn-small button-delete">Delete</a>
+								<a href="" ng-click="goDetail(e._id)" class="btn btn-small">Detail</a>
+							</div>
+						</div>
+					</div>
+					<h4 ng-show="size < 1" align="center">No memories. Let's upload some photo memories.</h4>
+					<!-- End Post -->
+	    		</div>
+			</div>
+		</div>
+
+	  
+
+

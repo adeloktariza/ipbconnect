@@ -1,0 +1,222 @@
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Form Events</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+     
+        <div class="section">
+	    	<div class="container">
+    		<flash-message
+			    duration="10000"
+			    show-close="true"
+			    on-dismiss="myCallback(flash);"
+			></flash-message> 
+	    	<form >
+	    		<div class="row">
+	    			<div class="col-md-8">
+						<div class="comment-form-wrapper">
+		        				<div class="form-group">
+		        				 	<label for="comment-name"><b>Title</b></label>
+									<input class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.title">
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="comment-form-wrapper">
+		        				<div class="form-group">
+		        				 	<label for="comment-name"><b>Place</b></label>
+									<input class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.place" required="true">
+							 
+																 
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div id="map">
+	    		<div class="row" >
+	    			<div class="col-md-8">
+	    				<input id="pac-input" class="form-control" type="text" placeholder="Search Box"><br/>
+	    				<div map-lazy-load="{{googleMaps}}" class="col s12" style="padding:0px">
+					         <ng-map on-click="addMarker()" center="{{position.lat}}, {{position.lng}}" zoom="15">
+					          	<marker position="{{position.lat}}, {{position.lng}}"></marker>
+					        </ng-map>
+					     </div>
+	    			</div>
+	    		</div>
+	    		<br/>
+			    </div>
+			    <br/>
+	    		<div class="row">
+	    			<div class="col-md-3">
+	    				<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<label for="comment-email"><b>Start Date</b></label>
+									<input type="text" placeholder="" class="form-control" uib-datepicker-popup="{{format}}" ng-model="form.startDate" is-open="popupStart.opened" datepicker-options="dateOptions" close-text="Close" alt-input-formats="altInputFormats" readonly / required="true">
+								</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-1 cal-top">
+	    				<div class="comment-form-wrapper">
+	    					<div class="form-group">
+	    						 <span>
+                                        <button type="button" class="btn btn-default" ng-click="openStart()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                 </span>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="col-md-3" ng-hide="hideEndDate">
+	    				<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<label for="comment-email"><b>End Date</b></label>
+									<input type="text" placeholder="" class="form-control" uib-datepicker-popup="{{format}}" ng-model="form.endDate" is-open="popupEnd.opened" datepicker-options="dateOptions" close-text="Close" alt-input-formats="altInputFormats" readonly />
+                                   
+								</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-2 cal-top">
+	    				<div class="comment-form-wrapper">
+	    					<div class="form-group">
+	    						<span ng-hide="hideEndDate">
+                                     <button type="button" class="btn btn-default" ng-click="openEnd()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                 </span>
+                                 &nbsp;&nbsp;
+                                  <input type="checkbox" ng-model="oneDay" ng-change="isOneDay()" value="{{oneDay}}"/>
+                                  <label>1 Day</label>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+		    			<div class="col-md-3">
+		    				<div class="comment-form-wrapper">
+			        				<div class="form-group">
+										<label for="comment-email"><b>Start Time</b></label>
+									<!-- 	 <input type="text" placeholder="" class="form-control" value="{{ startTime  | date:'shortTime'}}" / required="true">    -->
+										<input type="time" ng-model="startTime" class="form-control">       
+									</div>
+							</div>
+		    			</div>
+		    			<div class="col-md-3" style="margin-left: 65px;" ng-hide="hideEndTime">
+		    				<div class="comment-form-wrapper">
+			        				<div class="form-group">
+										 <label for="comment-email"><b>End Time</b></label>
+								<!-- 		 <input type="text" placeholder="" class="form-control" value="{{ endTime  | date:'shortTime'}}" />   -->
+										 <input type="time" ng-model="endTime" class="form-control">    
+									</div>
+
+							</div>
+		    			</div>
+		    			<div class="col-md-2" style="margin-top: 30px;">  
+		    				<div class="comment-form-wrapper">  
+		    					<div class="form-group">                   
+	                                  <input type="checkbox" ng-model="untilEnd" ng-change="isUntilEnd()"/>
+	                                  <label>Until End</label>
+                                 </div>
+                            </div>
+                        </div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<label for="comment-message"><i class="glyphicon glyphicon-comment"></i> <b>Description</b></label>
+									<textarea class="form-control" rows="5" id="comment-message" 
+									ng-model="form.description"></textarea>
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="comment-email"><b>Contact</b></label>
+							<input class="form-control" id="comment-email" type="text" placeholder=""
+							ng-model="form.contact">
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-4" ng-hide="hidePrice">
+	    				<div class="form-group">
+							<label for="comment-email"><b>Price (Rp)</b></label>
+							<input class="form-control" id="comment-email" type="text" placeholder=""
+							ng-model="form.price" format="number">
+						</div>
+	    			</div>
+	    			<div class="col-md-2" style="margin-top: 30px;">  
+	    				<div class="comment-form-wrapper">  
+	    					<div class="form-group">
+	    						  <label for="comment-email" ng-show="hidePrice	"><b>Price&nbsp;</b></label>                  
+                                  <input type="checkbox" ng-model="free" ng-change="isFree()"/>
+                                  <label>Free</label>
+                             </div>
+                        </div>
+                    </div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="comment-email"><b>Banner Events</b></label>
+							      <input 
+							       onchange="angular.element(this).scope().setTrueShowImage()"
+					               type="file" 
+					               ngf-select 
+					               ng-model="file" 
+					               name="file" 
+					               ngf-pattern="'image/*'"
+					               accept="image/*" 
+					               ngf-max-size="20MB" 
+					               />
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+        			 <div ng-if="!showImageInput && dontshow" class="col-md-8">
+                           <label>No Logo</label>
+                     </div> 
+	    		</div>
+	    		<div class="row">
+					  <div ng-if="!showImageInput && !dontshow" >
+                           <img  ngf-src="urlPhoto(file)" class="img-thumbnail" height="400px" width="300px" />
+                      </div> 	    			
+	    		</div>
+	    		<div class="row">
+	    			  <div  ng-if="showImageInput ">
+                           <img  ngf-src="file" class="img-thumbnail" height="400px" width="300px"/>
+                       </div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-3">{{progress}}</div>
+	    		</div>
+	    		<br>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+											
+							<button type="button" class="btn pull-right button-right" ng-show="btnSubmit" ng-click="saveEvents()">Submit</button>
+							<button type="button" class="btn pull-right button-right" ng-click="editEvents(form)" ng-show="btnUpdate">Save</button>
+							<button type="button" class="btn pull-right button-right button-delete" ng-click="deleteEvents()" ng-show="btnDelete">Delete</button>
+							
+							<button class="btn button-cancel" ui-sref="app.events_list">Cancel</button>
+							
+							<button class="btn button-reset" ng-click="reset()">Reset</button>
+							
+						</div>
+	    			</div>
+	    		</div>
+	    		</form>
+			</div>
+		</div>
+
+	  
+
+

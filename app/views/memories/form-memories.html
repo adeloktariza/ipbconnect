@@ -1,0 +1,68 @@
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Form Memories</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+    		<flash-message
+			    duration="10000"
+			    show-close="true"
+			    on-dismiss="myCallback(flash);"
+			></flash-message> 
+	    	<form ng-submit="saveMemory()">
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="comment-email"><b>Caption</b></label>
+							<input class="form-control" id="comment-email" type="text" placeholder=""
+							ng-model="form.caption">
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+							<label for="comment-email"><b>Image</b></label>
+							      <input 
+					               type="file" 
+					               ngf-select 
+					               ng-model="file" 
+					               name="file" 
+					               ngf-pattern="'image/*'"
+					               accept="image/*" 
+					               ngf-max-size="40MB" 
+					               />
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-3">{{progress}}</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-8">
+	    				<div class="form-group">
+											
+							<button type="submit" class="btn pull-right button-right" ng-show="btnSubmit" ng-click="saveMemories()">Submit</button>
+							<button type="button" class="btn pull-right button-right" ng-click="editMemory(form)" ng-show="btnUpdate">Save</button>
+							
+							<button class="btn button-cancel" ui-sref="app.memories_list">Cancel</button>
+							
+							<button class="btn button-reset" ng-click="reset()">Reset</button>
+							
+						</div>
+	    			</div>
+	    		</div>
+	    		</form>
+			</div>
+		</div>
+
+	  
+
+

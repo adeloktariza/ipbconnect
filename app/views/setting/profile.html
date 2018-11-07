@@ -1,0 +1,186 @@
+		<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Profile</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+	    	<form ng-submit="saveEvents()">
+	    		<div class="row">
+	    			<div class="col-md-2 spc-up">
+		    			<div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Current Job</b></label>
+		    				</div>
+		    			 </div>
+	    			</div>
+	    			<div class="col-md-8">
+						<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<input class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.currentJob">
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-2 spc-up">
+		    			<div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Mobile Number</b></label>
+		    				</div>
+		    			 </div>
+	    			</div>
+	    			<div class="col-md-8">
+						<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<input class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.mobileNumber">
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-2 spc-up">
+		    			<div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Marital Status</b></label>
+		    				</div>
+		    			 </div>
+	    			</div>
+	    			<div class="col-md-1 spc-up spc-left">
+						<div class="comment-form-wrapper">
+							<div class="row">
+		        				<div class="form-group">
+									<input type="radio" id="maritalStatus_married" value="married" ng-model="form.maritalStatus">
+									<label class="black-text" for="maritalStatus_married">Married</label>
+								</div>
+							</div>
+						</div>
+	    			</div>
+	    			<div class="col-md-1 spc-up">
+						<div class="comment-form-wrapper">
+							<div class="row">
+								<div class="form-group">
+									<input type="radio" id="maritalStatus_single" value="single" ng-model="form.maritalStatus">
+									<label class="black-text" for="maritalStatus_single">Single</label>
+								</div>
+							</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-2 spc-up">
+		    			<div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Interest</b></label>
+		    				</div>
+		    			 </div>
+	    			</div>
+	    			<div class="col-md-8">
+						<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<input class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.interest">
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-2 spc-up">
+		    			<div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Hobby</b></label>
+		    				</div>
+		    			 </div>
+	    			</div>
+	    			<div class="col-md-8">
+						<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<input class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.hobby">
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col-md-2 spc-up">
+		    			<div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Address</b></label>
+		    				</div>
+		    			 </div>
+	    			</div>
+	    			<div class="col-md-8">
+						<div class="comment-form-wrapper">
+		        				<div class="form-group">
+									<textarea class="form-control" id="comment-name" type="text" placeholder=""
+									ng-model="form.address" row="5"></textarea> 
+								</div>
+						</div>
+	    			</div>
+	    		</div>
+	<!--     		<div class="row spc-up">
+	    			<div class="col-md-2">		 
+				           <div class="comment-form-wrapper">
+		    				<div class="form-group">	 	
+		    					<label for="comment-name"><b>Location</b></label>
+		    				</div>
+		    			 </div>
+					</div>
+	    			<div class="col-md-2">		 
+				            Latitude : {{form.latitude}}
+					</div>
+	    			<div class="col-md-2">
+				        
+				            Longitude : {{form.longitude}}
+	    			</div>
+	    			<div class="col-md-2">
+				            <button class="btn button-delete" type="button" ng-click="deleteLocation()" id="deleteLocation">
+				              delete</button>
+	    			</div>
+	    		</div>
+	    		<br/> -->
+	    		<div id="map">
+		    		<div class="row" >
+		    			<div class="col-md-10">
+		    				<input id="pac-input" class="form-control" type="text" placeholder="Search Box"><br/>
+		    				<div map-lazy-load="{{googleMaps}}" class="col s12" style="padding:0px">
+						         <ng-map on-click="addMarker()" center="{{position.lat}}, {{position.lng}}" zoom="15">
+						          <marker position="{{position.lat}}, {{position.lng}}"></marker>
+						        </ng-map>
+						     </div>
+		    			</div>
+		    		</div>
+		    		<br/>
+		<!--     		<div class="row">
+				      <div class="col-md-10">
+				     	 <div class="form-group">
+				       		<button class="btn bg-green button-right" type="button" ng-click="afterSetMaps()">Set Location</button>
+				       	  </div>
+				      </div>
+				    </div> -->
+			    </div>
+			    <br/>	    		
+	    		<div class="row">
+	    			<div class="col-md-10">
+	    				<div class="form-group">
+							<button type="button" class="btn pull-right button-right" ng-click="editProfile(form)">Save</button>
+							<button type="button" class="btn pull-right button-right button-cancel" ui-sref="app.setting">Cancel</button>
+							
+						</div>
+	    			</div>
+	    		</div>
+	    		</form>
+			</div>
+		</div>
+
+	  
+
+

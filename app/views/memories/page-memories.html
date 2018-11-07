@@ -1,0 +1,38 @@
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Memories</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- Posts List -->
+        <div class="section blog-posts-wrapper">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6" ng-repeat="e in listmemories" ng-click="goDetail(e._id)">
+	        			<div class="service-wrapper">
+	        				<div class="post-info spc-min-up">
+								<div class="post-date">
+									<div class="date">{{e.created | date:"dd"}} {{e.created | date:"MMM"}}, {{e.created | date:"yyyy"}}&nbsp; <i class="glyphicon glyphicon-comment"></i> {{e.comments.length}}</div>
+								</div>
+							</div>
+	        				<div class="author-photo spc-up">
+	        					<img ng-src="{{resolvedPhoto(e.photo)}}" height="200" width="150" alt="Service Name">
+							</div>		        					
+		        			<a href=""><h5><b>{{e.caption}}</b></h5></a>
+	        			</div>
+	        		</div>
+				</div>
+				<div ng-show="total < 1">
+					<h3>No Upcoming Memory. <br/><br/><br/><br/><br/></h3>
+				</div>
+				<div class="pagination-wrapper " ng-show="total > 0">
+					<ul uib-pagination total-items="offset" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true" num-pages="numPages" ng-change="pageChanged()"></ul>
+				</div>
+			</div>
+	    </div>
+	    <!-- End Posts List -->
